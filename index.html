@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ciarán McGarry IMD CV</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #007bff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111111;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.name{
+    font-family: 'Rockwell', cursive;
+}
+
+
+.backimg {
+  background-image: url('Images/backimg');
+}
+
+.debs{
+    text-align: center;
+}
+
+.emailbutton{
+    float: left;
+      padding-left: 450px;
+}
+
+.CVbutton {
+      float: left;
+      padding-left: 80px;
+    }
+
+.jumbotron-fluid{
+    background-color: #007bff;
+    text-align: center;
+}
+.container{
+    font-family: 'Rockwell', cursive;
+}
+.ban{
+    text-align: center;
+}
+.hovereffect {
+width:100%;
+height:100%;
+float:left;
+overflow:hidden;
+position:relative;
+text-align:center;
+cursor:default;
+}
+
+.hovereffect .overlay {
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:0;
+left:0;
+opacity:0;
+background-color:rgba(0,0,0,0.5);
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+}
+
+.hovereffect h2 {
+text-transform:uppercase;
+color:#fff;
+text-align:center;
+position:relative;
+font-size:17px;
+background:rgba(0,0,0,0.6);
+-webkit-transform:translatey(-100px);
+-ms-transform:translatey(-100px);
+transform:translatey(-100px);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+padding:10px;
+}
+
+.hovereffect a.info {
+text-decoration:none;
+display:inline-block;
+text-transform:uppercase;
+color:#fff;
+border:1px solid #fff;
+background-color:transparent;
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+margin:50px 0 0;
+padding:7px 14px;
+}
+
+.hovereffect a.info:hover {
+box-shadow:0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+-ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.hovereffect:hover h2,.hovereffect:hover a.info {
+opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0);
+-webkit-transform:translatey(0);
+transform:translatey(0);
+}
+
+.hovereffect:hover a.info {
+-webkit-transition-delay:.2s;
+transition-delay:.2s;
+}
+
+article.accordion
+{
+  display: block;
+  width: 43em;
+  margin: 0 auto;
+  background-color: #007bff;
+  overflow: auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+}
+article.accordion section
+{
+  position: relative;
+  display: block;
+  float: left;
+  width: 2em;
+  height: 12em;
+  margin: 0.5em 0 0.5em 0.5em;
+  color: #333;
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 3px;
+}
+article.accordion section h2
+{
+  position: absolute;
+  font-size: 1em;
+  font-weight: bold;
+  width: 12em;
+  height: 2em;
+  top: 12em;
+  left: 0;
+  text-indent: 1em;
+  padding: 0;
+  margin: 0;
+  color: #ddd;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+article.accordion section h2 a
+{
+  display: block;
+  width: 100%;
+  line-height: 2em;
+  text-decoration: none;
+  color: inherit;
+  outline: 0 none;
+}
+article.accordion section:target
+{
+  width: 30em;
+  padding: 0 1em;
+  color: #333;
+  background-color: #fff;
+}
+article.accordion section:target h2
+{
+  position: static;
+  font-size: 1.3em;
+  text-indent: 0;
+  color: #333;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+article.accordion section,
+article.accordion section h2
+{
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+
+.results{
+    padding-right: 500px;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    
+    <body style="background-color:#DCE1E3">
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-3">Ciarán McGarry</h1>
+              <h3>Welcome to my CV <i class="far fa-smile"></i></h3>
+            </div>
+          </div>
+         <div class="scroll-behaviour">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="name"> 
+        <a href="#">Ciarán McGarry</a>
+    </div>
+        <a href="#aboutme"><i class="far fa-user-circle"></i> About </a>
+        <a href="#education"><i class="fas fa-user-graduate"></i> Education</a>
+        <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
+        <a href="# WorkExperience"><i class="fas fa-building"></i> Work Experience</a>
+        <a href="#Interests"> <i class="fas fa-dice-d20"></i> Interests</a>
+
+      </div>
+  
+
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+  </div>
+  <div class="backimg"> 
+
+<!-- Container for page  -->
+<div class="container" style="margin-top:30px">
+    <div class="row">
+      <!-- inlin style tag again & col 12 -->
+      <div class="col-sm-12">
+        <a id="ciaranmcgarry">
+          <h1 style="text-align: center; padding-top: 5px;color:#007bff;"></h1>
+        </a>
+        <div class="MeText">
+            <p style="text-align: center; padding-top: 10px;color: #FFFF;"> <b> Final Year student studying Computing in TUDublin Tallaght Campus. 
+              </b> </p>
+          </div>
+        <!-- Profile image sized to fit page -->
+        <div class="debs">
+          <img src="Images/Debs1.png" class="img-thumbnail" alt="profile-picture" width="400" height="400">
+        </div>
+        <!-- p style to centre the text -->
+        
+    </div>
+
+            <!-- creation of email modal -->
+            <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to me <i class="fas fa-keyboard"></i></h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- Name with icon  -->
+                  <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                      <label data-error="wrong" data-success="right" for="form34"> <i class="fas fa-users"></i> Your
+                        Name:
+                      </label>
+
+                      <input type="text" id="form34" class="form-control validate">
+                    </div>
+                    <!-- Email address section w/ icon -->
+                    <div class="md-form mb-5">
+                      <label data-error="wrong" data-success="right" for="form29"> <i class="fas fa-envelope"></i> Your
+                        Email Address:</label>
+                      <input type="email" id="form29" class="form-control validate">
+
+                    </div>
+                    <!-- Subject section with icon -->
+                    <div class="md-form mb-5">
+                      <label data-error="wrong" data-success="right" for="form32"> <i class="fas fa-tag"></i>
+                        Subject:</label>
+                      <input type="text" id="form32" class="form-control validate">
+                    </div>
+                    <!-- Message section with icon  -->
+                    <div class="md-form">
+                      <label data-error="wrong" data-success="right" for="form8"> <i class="fas fa-pen"></i> Your
+                        message:</label>
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                    </div>
+
+                  </div>
+                  <!-- Send button with Glyphicon and using success buton. -->
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Send <i
+                        class="fas fa-paper-plane"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            
+
+            <!-- EMAIL MODAL SENTENCE -->
+            <div class="emailbutton">
+                <div class="MyCVButton">
+                  <a href="#" class="button" data-toggle="modal" data-target="#modalContactForm">
+                    <!-- Email Button, Centred using CSS -->
+  
+                    <button type="button" class="btn btn-primary"> Email Me</button>
+                </div>
+              </div>
+             
+              <div class="CVbutton">
+                <!-- Link to Word doc of CV on LinkedIN -->
+                <a href="https://www.linkedin.com/in/ciaran-mcgarry/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAACZgjcoBRXdcfXuD_Dyldthw3fozHWUCqO4,1573476581295)/"
+                  target="_blank">
+                  <button type="button" class="btn btn-primary" data-toggle="#" data-target="#myModal">
+                    My CV
+                  </button>
+                </div>
+
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+               
+                <div class="col-sm-12">
+                    <!-- Use of Anchor -->
+                    <a id="aboutme">
+                      
+                      <div class="aboutME">
+                        <br>
+                        <br>
+        
+                      <!-- In-line style for h1 tag. -->
+                      <div class="ban"> 
+                 <img src="Images/banner.jpg" class="#" alt="Banner" width="1000" height="150"> </a>
+                    </a></div>
+                    <br>
+                    <br>
+             <div class="col-sm-12">
+                 <ul> 
+                <p> Young aspiring 22 year old hard working individual, currently finishing his degree studies
+                    in a BSC of Science in IT Management while in attendance of the
+                    new University in Dublin, TUDublin Tallaght Campus. I always was interested in computers and had curiosity
+                    to
+                    learn how they worked, and eventually after my leaving cert
+                    i decided to peak my curiosity and study computers and now im in my final year graduating next
+                    year, hopefully after graduating going out in Industry and getting a good job and get some real hands on
+                    experience in the world of IT.</p>
+                </ul>
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+                  
+                    <div class="container">
+                        <div class="row">
+                          <!-- Rows for Education Page & breaks to have the text sit under one another  -->
+                          <div class="col-sm-6">
+                            <!-- USe of Anchor -->
+                            <a id="education">
+                              <h1 style="color:#007bff;">Education</h1>
+                            </a>
+                            <h4 style="color:#FFF;">Bachelor Degree in Computing with IT Managemnt</h4>
+                            <p> As mentioned i am currently in my final year of a 4 year degree studying Computer Science in IT
+                              Management.
+                              I have learned many skills
+                              from my time whilst in college such as:
+                              <br> &#x2714; Presentating Projects.
+                              <br> &#x2714;  Interview prepartion.
+                              <br> &#x2714;  People skills.
+                              <br> &#x2714; Project Management
+                              <br> &#x2714; Working in Groups.
+                              <br> &#x2714; Personal Development.
+                              <br> &#x2714; Networking.
+                              <br> &#x2714; Creativity & Critical Thinking
+                              <br>
+                              <br>
+                            </p>
+                            </a>
+                            <hr class="d-sm-none">
+                          </div>
+
+                          <div class="col-sm-6">
+                            <!-- Use of Anchor -->
+                            <a id="education">
+                            </a>
+
+                            <div class="col-sm-6">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="Images/comp.png" alt="">
+                                    <div class="overlay">
+                                       <a class="info" href="https://www.it-tallaght.ie/"target="_blank">Check Out College Website!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="d-sm-none">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                            <div class="col-sm-6">
+                                <h2 style="color:#007bff;">IT skills learned:</h2>
+
+                                <div class="skill1"> 
+        &#10025; Can write Scripts in PowerShell and Python
+          <br>
+          &#10025; Can design and create Twitter datasets through NodeXL
+          <br>
+          &#10025;  Capable of desiging and developing websites using HTML 5, CSS and play Framework
+          <br>
+          &#10025; Learned Tableau for use of Graphs
+          <br>
+          &#10025; Use cloud Enviornments like GitHub & Azure
+          <br>
+          &#10025; Comptent User of Windows & Linux Opearting Systems in sys admin.
+          <br>
+          &#10025; Good level of Networking & use of CLI systems like Packet Tracer
+          <br>
+          &#10025; Good level of experience using Google Cloud system
+
+
+             </div> </div>
+
+             <div class="col-sm-6">
+                <img src="Images/tech.png" class="#" alt="TUD Logo" width="500" height="300">
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br><br>
+                <br>
+                <br>
+                
+                <br>
+                <br>
+              
+                <br>
+                <br>
+            
+                <br>
+                <br>
+             
+                <br>
+                <br>
+                <div class="col-sm-12">
+                    <h2 style="color:#007bff;">Exam Results:</h2>
+                <div class="results"> 
+                <article class="accordion">
+                    <section id="acc1">
+                      <h2><a href="#acc1">Year 4(Current Year)</a></h2>
+                      <p>
+                        &#10056; Interactive Media Design & Visualization
+                        <br>
+                        &#10056; Security for Cloud and the Internet of Things
+                        <br>
+                        &#10056; Private Cloud Architecture
+                        <br>
+                        &#10056; Enterprise Performance Architecture
+                        <br>
+                        &#10056; Information Management
+                        <br>
+                        &#10056; Social Media Analysis
+                        <br>
+                        &#10056; 4th Year Project (Deparment of Agriculture migration to a CRM system.)
+                        <br></p>
+                    </section>
+                    <section id="acc2">
+                      <h2><a href="#acc2">Year 3 GPA:(2.04)</a></h2>
+                      <p>
+                        - Big Data Technology  (D) 
+                       
+                        - Advance Routing & Switching  (C) 
+                        <br>
+                        - Server-Side Web Development  (C) 
+                        <br>
+                        - Cloud Services & Distributed Computing (C) 
+                        <br>
+                        - Operating Systems  (C)
+                        <br>
+                        - Innovation & Enterprise (B-) 
+                        <br>
+                        - Work Experience <b> (Deparment of Agriculture)</p>
+                    </section>
+                    <section id="acc3">
+                        <!-- Got rid of Bold but still staying bold for some reason. -->
+                      <h2> <a href="#acc3">Year 2 GPA:(2.25)</a> </h2>
+                      <p> - Advanced Routing & Switching Essentials  (C)
+                        <br>
+                        - ITSM (C) 
+                        <br>
+                        - Information Security  (C) 
+                        <br>
+                        - Discrete Mathematics 2  (B+) 
+                        <br>
+                        - Management Science (C) 
+                        <br>
+                        - Software Quality Assurance & Session testing (C) 
+                        <br>
+                        - Project  (B) 
+                        <br>
+                        - Client-side Web Development  (C) 
+                        <br>
+                        - Database Admin & Analysis  (D) 
+                        <br>
+                        - IT Scripting & Automation (D) 
+                        <br>
+                        - Advance Datbase Technologies (C+) </b>
+                        <br>
+                        - - Network Fundamentals  (B) </p>
+                    </section>
+                    <section id="acc4">
+                      <h2><a href="#acc4">Year 1GPA:(2.46) </a></h2>
+                      <p> - Object Oriented System Analysis <b> (B-) </b>
+                        <br>
+                        - Computer Architecture <b> (B-) </b>
+                        <br>
+                        - Discrete Mathematics <b> (C+) </b>
+                        <br>
+                        - Business & Information Systems<b> (C+) </b>
+                        <br>
+                        - Statistics <b> (C) </b>
+                        <br>
+                        - Social Media Communications <b> (B) </b>
+                        <br>
+                        - Software Development 1 <b> (C) </b>
+                        <br>
+                        - Software Development 2 <b> (D) </b>
+                        <br>
+                        - Operating Systems Fundamentals <b> (C+) </b>
+                        <br>
+                        - Fundamentals of Interface and Web Design <b> (C) </b>
+                        <br>
+                        - Learning to Learn <b> (B) </b></p>
+                    </section>
+                  </article></div>
+
+                  
+<div class="container">
+    <a id="projects">
+    <h1 style="color:#007bff;">Some Interesting Projects Done:</h1>
+    </a>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+  
+        <div class="item active">
+          <img src="Images/music.png" alt="MusicPage" style="width:100%;">
+          <div class="carousel-caption">
+            <h2 style="color:rgb(17, 17, 17);">Project One:</h2>
+  
+          </div>
+        </div>
+  
+        <div class="item">
+            <a href="https://dynamics.microsoft.com/en-ie/" target="_blank"> 
+          <img src="Images/crmsystem.PNG" alt="CRM" style="width:100%;"> </a>
+          <div class="carousel-caption">
+            <h2 style="color:rgb(17, 17, 17);">Project Two:</h2>
+          </div>
+        </div>
+      
+    
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="MusicShop">
+    <ul>
+      <!-- Tag inline style to centre the text -->
+      <h4 style="text-align:center;color:#FFFF"> Sadly i cant find our website but this image shows
+        how it looked .
+      </h4>
+      <p>
+        <h2 style="color:#FFF;">Project One:</h2>
+
+        This was a team project we done for our second year project:
+        We were tasked with to make a functioning ecommerce store that had products and a shopping
+        basket.
+
+        To add and remove products from the basket. We chose a music shop as the store.
+        We had an internal datbase with mulitple styles of insturments.
+        We created a categories tab, allowing for ease of use for the user being able to navigate to
+        a particular instrument style like drums or guitars.
+        We had users created who were able to log in: An Admin, Manager, Customer.
+        Admin had access to everything to change the database on the website, same as the manager
+        allowing for
+        add, update and deletion of products. A customer could just log in and just buy a product no
+        access to the database.
+        A customer could but an item in there basket and increase or decrease the amount of what they
+        want of that product.
+
+    </ul>
+
+
+</ul>
+
+<br>
+<!-- UL to push the text in a small bit -->
+<ul>
+ <p> <b> Issues faced: </b>
+  That if a person decided to get a product, the stock amount in the database wouldnt decrement by
+  one. Due to time constraints it was never fixed
+  and we documented that.
+  <br>
+  <b> Technologies & Tools Used: </b>
+  Play framework, Java, Linux, HTTP, GitHub, Azure Dev ops
+  </p> </p> 
+</ul>
+<br>
+<ul> 
+<h2 style="color:#FFF;">Project Two:</h2>
+
+ <!-- Div with text about Internship. Using UL to push the text in a little.-->
+ <div class="Proj2text">
+    <p> This project topic was based around the workings i done in my internship while
+      working for DAFM. Whilst working there i spend my time working on the laptop team and
+      the IT helpdesk. The IT helpdesk system they used was called Lotus Notes which is a
+      30 year old system created by IBM. This was an old dated and poorly used system.
+      That shouldnt be used in todays technological world.</p>
+
+    <p> The plan was to migrate to a new more mordernized system to make life for the helpdesk
+      agent and the user much more easier to be able to use a better system to benefit all
+      parties
+      Due to this, a migration to a new system by Microsoft called Dynamics365 was the plan of
+      Actions
+      and this is where the topic of my final year project came from, documenting the tasks to
+      migrate
+      for such a big organization and did they make the right choice choosing a Microsoft
+      product
+      too
+    </p>
+    <p> <b> Technologies Used: </b> <br>
+      • Dynamics365 <br>
+      • Salesforce CRM <br>
+      • Postman API <br>
+    </p>
+</ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <script>
+                function openNav() {
+                  document.getElementById("mySidenav").style.width = "250px";
+                  document.getElementById("main").style.marginLeft = "250px";
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                  document.getElementById("main").style.marginLeft= "0";
+                }
+                </script>
+            
+        </div>
+</body>
+</html>
